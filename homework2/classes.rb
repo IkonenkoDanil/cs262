@@ -2,8 +2,7 @@ class CustomFile < File
 
     def initialize; end
 
-    def self.my_absolute_path(file_name)
-        # Метод, превращающий путь к файлу в его абсолютный путь (собственная реализация)
+    def self.my_absolute_path(file_name) 
 
         parent_count = 0
         while file_name.start_with?("../")
@@ -24,7 +23,6 @@ class CustomFile < File
     end
 
     def self.absolute_path(file_name)
-        # Метод, превращающий путь к файлу в его абсолютный путь
         super
     end
     
